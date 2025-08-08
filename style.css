@@ -1,0 +1,25 @@
+/*元件*/
+.circle{
+    border-radius: 50%;
+}
+
+.cat-img{
+    width: 44px;
+    border:1px solid var(--Global-Border-primary);
+}
+
+
+nav a:hover,
+footer a:hover{
+    font-weight: 800;
+}
+
+.btn{
+    background-color: var(--Button-ghost-bg);
+    border:1px solid var(----Input-default-border);
+    border-radius: 16px;
+   
+}
+.btn:hover{
+    background-color: var(--Button-ghost-bg-hover);
+}
