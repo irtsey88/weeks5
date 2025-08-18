@@ -7,6 +7,19 @@
     <title>index</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
   </head>
+<style>
+  .avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 8px;
+    }
+    .navbar-toggler {
+      border: none; /* 移除邊框 */
+    }
+</style>
+
   <body>
     <%- include('./layout/header'); -%>
 
@@ -14,7 +27,7 @@
 
     <div class="card" style="width: 18rem">
       <img src="../assets/images/dog.jpg" class="card-img-top" alt="cat" />
-      <div class="card-body">
+      <div class="card-body shadow">
         <h5 class="card-title">卡片元件</h5>
         <p class="card-text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit, iusto odio assumenda alias id
@@ -51,7 +64,58 @@
       </div>
     </div>
 
+<div class="mb-5 mb-lg-7">
+
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-dark">Dark</button>
+
+<button type="button" class="btn btn-link">Link</button>
+    </div>
+
+    <p class="fs-3 fs-lg-1">測試，此為一段文字</p>
+
+    <div class="container">
+      <div class="row gy-5">
+       <div class="col-md-6 col-lg-4">
+        <img src="https://images.airspaceonline.com/photo/2520724066/0aca095d-7c5c-4a55-93bf-5abffd0b8a9b.webp" alt="test">
+       </div>
+
+       <div class="col-md-6 col-lg-4">
+        <img src="https://images.airspaceonline.com/photo/2520724066/0aca095d-7c5c-4a55-93bf-5abffd0b8a9b.webp" alt="test">
+       </div>
+
+       <div class="col-md-6 col-lg-4">
+        <img src="https://images.airspaceonline.com/photo/2520724066/0aca095d-7c5c-4a55-93bf-5abffd0b8a9b.webp" alt="test">
+       </div>
+
+       <div class="col-md-6 col-lg-4">
+       <img src="https://images.airspaceonline.com/photo/2520724066/0aca095d-7c5c-4a55-93bf-5abffd0b8a9b.webp" alt="test">
+       </div>
+
+       <div class="col-md-6 col-lg-4">
+       <img src="https://images.airspaceonline.com/photo/2520724066/0aca095d-7c5c-4a55-93bf-5abffd0b8a9b.webp" alt="test">
+       </div>
+
+       <div class="col-md-6 col-lg-4">
+       <img src="https://images.airspaceonline.com/photo/2520724066/0aca095d-7c5c-4a55-93bf-5abffd0b8a9b.webp" alt="test">
+       </div>
+
+
+
+      </div>
+
+
+    </div>
+
     <%- include('./layout/footer'); -%>
+
+    <nav class="navbar navbar-expand-lg bg-white border-bottom">
 
     <script type="module" src="../main.js"></script>
   </body>

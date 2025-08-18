@@ -1,6 +1,10 @@
 @import "../../node_modules/bootstrap/scss/functions";
-@import './utils/variables';
+@import "./utils/variables";
+@import './utils/utils';
 @import "../../node_modules/bootstrap";
+
+@import './utils/utilities'; //擺放位置很重要，這二個一定要在一起前後
+@import "bootstrap/scss/utilities/api";
 
 @import './base/base';
 
@@ -8,4 +12,4 @@
 @import './layout/footer.scss';
 
 @import './pages/index.scss';
-@import './pages/user';
+@import "./pages/user";

@@ -1,32 +1,80 @@
-.bg-gray{
-    background-color:#F0F3F5;
+.side-width {
+  width: 100%; 
+}
+
+@media (min-width: 768px) { // 平板/桌機以上才限制寬度
+  .side-width {
+    width: 300px;
+  }
+}
+
+.tab-btn-bg{
+
+  .nav-link{
+
+    background-color: $white;
+
+  }
+
+}
+.pill-bg{
+
+background-color: $white;
 
 }
 
-.py-80{
-    padding-top: 80px;
-    padding-bottom: 80px;
+table:hover{
+  color: $primary-90;
 }
 
-.rounded-plan1{
-border-radius: 24px;
-background-color: #fcfcfd;
+@media (max-width: 768px) {
+
+section {
+    .row {
+      margin-left: 0;  // 去掉 Bootstrap 預設負 margin
+      margin-right: 0;
+    }
+
+    .col-8,
+    .col-4,
+    .col-6,
+    .col-12 {
+      padding-left: 0 !important; // 去掉左右 padding
+      padding-right: 0 !important;
+      text-align: left;           // 統一左對齊
+    }
+  }
+
+
+.row {
+  position: relative; // 為了讓 badge 絕對定位的參考點
+
+  .col-4 {
+    position: absolute;
+    top: 50%;
+    right: 0.5rem;       // 與右側間距
+    transform: translateY(-50%); // 垂直置中
+    text-align: right;   // 保險起見，右對齊
+    padding: 0;          // 移除多餘 padding
+  }
+
+  .col-8 {
+    width: 100%; // 讓標題佔滿整行
+    padding-right: 3rem; // 預留右邊空間給 badge
+  }
+}
 }
 
-.text-blue{
- color:#4A69E8;
+.table {
+  display: none; 
 
+  @media (min-width: 768px) { 
+    display: table; 
+  }
 }
 
-.title{
- color: #667F99;
- font-size: 18px;
-
-}
-.side-width{
- width: 300px;
-}
-
-.mb-20 {
-  margin-bottom: 5rem !important; /* 80px */
+.form-floating label {
+  white-space: normal;   // 允許自動換行
+  overflow: visible;     // 取消文字被截斷
+  text-overflow: unset;  // 取消省略號
 }
